@@ -25,8 +25,6 @@ jobs:
           echo "ANDROID_JAR=$(ls $ANDROID_HOME/platforms/android-*/android.jar | sort -V | tail -1)" >> "$GITHUB_ENV"
           BT="$(ls -d $ANDROID_HOME/build-tools/* | sort -V | tail -1)"
           echo "$BT" >> "$GITHUB_PATH"
-          aapt2 version
-          d8 --version || true
 
       - name: Restore signing key
         env:
