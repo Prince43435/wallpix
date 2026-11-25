@@ -13,7 +13,7 @@
     <string name="bulk_add">Bulk add</string>
     <string name="empty_admin">No wallpapers yet.\nTap “Add wallpaper” to import one.</string>
     <string name="empty_user">No wallpapers yet</string>
-    <string name="empty_user_sub">Admin panel se wallpaper add karein,\nwo turant yahan dikhega.</string>
+    <string name="empty_user_sub">Cloud icon dabao aur server URL set karo.\nAdmin jo add karega wo yahan aa jayega.</string>
     <string name="open_admin">Open Admin Panel</string>
     <string name="set_home">Home</string>
     <string name="set_lock">Lock</string>

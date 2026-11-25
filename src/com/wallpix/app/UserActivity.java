@@ -92,6 +92,17 @@ public class UserActivity extends Activity {
 
         apply();
         if (Cloud.enabled(this)) refreshCloud();
+        maybePromptCloud();
+    }
+
+    /** First run of the user-only app: ask for the cloud server once. */
+    private void maybePromptCloud() {
+        if (Cloud.enabled(this) || !local.isEmpty()) return;
+        android.content.SharedPreferences p =
+                getSharedPreferences(Store.PREFS, MODE_PRIVATE);
+        if (p.getBoolean("cloud_prompted", false)) return;
+        p.edit().putBoolean("cloud_prompted", true).apply();
+        Cloud.showSettings(this, false, this::refreshCloud);
     }
 
     // ------------------------------------------------------------- cloud
