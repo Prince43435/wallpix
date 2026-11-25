@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    android:fitsSystemWindows="true">
+
+    <!-- PIN GATE -->
+    <LinearLayout
+        android:id="@+id/pinBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="28dp">
+
+        <ImageView
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:background="@drawable/card"
+            android:padding="18dp"
+            android:src="@drawable/ic_shield"
+            android:tint="@color/gold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/pin_title"
+            android:textColor="@color/text"
+            android:textSize="26sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/pin_sub"
+            android:textColor="@color/muted"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/pinInput"
+            android:layout_width="220dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/input_bg"
+            android:gravity="center"
+            android:inputType="numberPassword"
+            android:letterSpacing="0.35"
+            android:maxLength="4"
+            android:textColor="@color/text"
+            android:textSize="26sp"/>
+
+        <TextView
+            android:id="@+id/pinError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Wrong PIN, try again"
+            android:textColor="@color/danger"
+            android:textSize="13sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/unlockBtn"
+            android:layout_width="220dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/btn_primary"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="@string/unlock"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/pinHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/pin_hint"
+            android:textColor="@color/muted2"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <!-- ADMIN CONSOLE -->
+    <LinearLayout
+        android:id="@+id/adminBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="12dp"
+            android:paddingTop="18dp"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/admin_title"
+                    android:textColor="@color/text"
+                    android:textSize="26sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/stats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="0 wallpapers"
+                    android:textColor="@color/muted"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/lockBtn"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/btn_ghost"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="10dp"
+                android:src="@drawable/ic_lock"
+                android:tint="@color/muted"/>
+
+            <ImageView
+                android:id="@+id/moreBtn"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:background="@drawable/btn_ghost"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="10dp"
+                android:src="@drawable/ic_more"
+                android:tint="@color/muted"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="6dp">
+
+            <TextView
+                android:id="@+id/addBtn"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_primary"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_add"
+                android:drawablePadding="8dp"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/add_wallpaper"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/bulkBtn"
+                android:layout_width="112dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_ghost"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/bulk_add"
+                android:textColor="@color/text"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <GridView
+                android:id="@+id/grid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnWidth="150dp"
+                android:horizontalSpacing="10dp"
+                android:numColumns="2"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="14dp"
+                android:clipToPadding="false"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp"/>
+
+            <TextView
+                android:id="@+id/empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="32dp"
+                android:text="@string/empty_admin"
+                android:textColor="@color/muted"
+                android:textSize="14sp"
+                android:lineSpacingExtra="6dp"
+                android:visibility="gone"/>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

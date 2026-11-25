@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/btn_ghost"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="11dp"
+            android:src="@drawable/ic_back"
+            android:tint="@color/text"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/favBtn"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/btn_ghost"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="11dp"
+            android:src="@drawable/ic_star"
+            android:tint="@color/gold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#E60B0D14"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Wallpaper"
+            android:textColor="@color/text"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/meta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Nature"
+            android:textColor="@color/muted"
+            android:textSize="12sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/setHome"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_ghost"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_home"
+                android:drawablePadding="6dp"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/set_home"
+                android:textColor="@color/text"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/setLock"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_ghost"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_lock"
+                android:drawablePadding="6dp"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/set_lock"
+                android:textColor="@color/text"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/setBoth"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_primary"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_wallpaper"
+                android:drawablePadding="6dp"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/set_both"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

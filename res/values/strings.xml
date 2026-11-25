@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WallPix</string>
+    <string name="admin_name">WallPix Admin</string>
+    <string name="user_name">WallPix</string>
+    <string name="admin_title">Admin Panel</string>
+    <string name="user_title">Wallpapers</string>
+    <string name="pin_title">Admin Panel</string>
+    <string name="pin_sub">Enter your 4-digit PIN</string>
+    <string name="pin_hint">Default PIN: 1234</string>
+    <string name="unlock">Unlock</string>
+    <string name="add_wallpaper">Add wallpaper</string>
+    <string name="bulk_add">Bulk add</string>
+    <string name="empty_admin">No wallpapers yet.\nTap “Add wallpaper” to import one.</string>
+    <string name="empty_user">No wallpapers yet</string>
+    <string name="empty_user_sub">Admin panel se wallpaper add karein,\nwo turant yahan dikhega.</string>
+    <string name="open_admin">Open Admin Panel</string>
+    <string name="set_home">Home</string>
+    <string name="set_lock">Lock</string>
+    <string name="set_both">Both</string>
+    <string name="favorites">Favorites</string>
+    <string name="all">All</string>
+    <string name="featured">Featured</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="wallpaper_set">Wallpaper set ✓</string>
+</resources>

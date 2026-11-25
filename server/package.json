@@ -1,0 +1,10 @@
+{
+  "name": "wallpix-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Zero-dependency cloud sync server for the WallPix Android app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

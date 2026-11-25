@@ -1,0 +1,11 @@
+build/
+dist/
+*.idsig
+*.apk
+*.log
+libs/
+tools/
+signing/*.jks
+server/data/
+server/node_modules/
+.DS_Store
